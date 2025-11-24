@@ -2,8 +2,8 @@ const db = require('../models');
 
 async function connectDatabase() {
     try {
-        await sequelize.authenticate();
-        console.log('databased connected sucessfully.');
+        await db.sequelize.authenticate();
+        console.log('Database connected successfully.');
 
         await db.sequelize.sync({ alter: true });
         console.log('Database synchronized');
