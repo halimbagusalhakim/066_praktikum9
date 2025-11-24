@@ -53,7 +53,7 @@ async function deleteKomik(database, id){
 }
 
 
-modulle.exports = {
+module.exports = {
     createKomik,
     getAllKomiks,
     getKomikById,
